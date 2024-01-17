@@ -8,342 +8,221 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-  }
-  
-  /* Sections
-     ========================================================================== */
-  
-  /**
-   * Remove the margin in all browsers.
-   */
-  
-  body {
-    margin: 0;
-  }
-  
-  /**
-   * Render the `main` element consistently in IE.
-   */
-  
-  main {
-    display: block;
-  }
-  
-  /**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-  
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
-  
-  /* Grouping content
-     ========================================================================== */
-  
-  /**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
-  
-  hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
-  }
-  
-  /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-  
-  pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-  }
-  
-  /* Text-level semantics
-     ========================================================================== */
-  
-  /**
-   * Remove the gray background on active links in IE 10.
-   */
-  
-  a {
-    background-color: transparent;
-  }
-  
-  /**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
-  
-  abbr[title] {
-    border-bottom: none; /* 1 */
-    text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
-  }
-  
-  /**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
-  
-  b,
-  strong {
-    font-weight: bolder;
-  }
-  
-  /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-  
-  code,
-  kbd,
-  samp {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-  }
-  
-  /**
-   * Add the correct font size in all browsers.
-   */
-  
-  small {
-    font-size: 80%;
-  }
-  
-  /**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
-  
-  sub,
-  sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-  
-  sub {
-    bottom: -0.25em;
-  }
-  
-  sup {
-    top: -0.5em;
-  }
-  
-  /* Embedded content
-     ========================================================================== */
-  
-  /**
-   * Remove the border on images inside links in IE 10.
-   */
-  
-  img {
-    border-style: none;
-  }
-  
-  /* Forms
-     ========================================================================== */
-  
-  /**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
-  
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
-  }
-  
-  /**
-   * Show the overflow in IE.
-   * 1. Show the overflow in Edge.
-   */
-  
-  button,
-  input { /* 1 */
-    overflow: visible;
-  }
-  
-  /**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
-  
-  button,
-  select { /* 1 */
-    text-transform: none;
-  }
-  
-  /**
-   * Correct the inability to style clickable types in iOS and Safari.
-   */
-  
-  button,
-  [type="button"],
-  [type="reset"],
-  [type="submit"] {
-    -webkit-appearance: button;
-  }
-  
-  /**
-   * Remove the inner border and padding in Firefox.
-   */
-  
-  button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-  }
-  
-  /**
-   * Restore the focus styles unset by the previous rule.
-   */
-  
-  button:-moz-focusring,
-  [type="button"]:-moz-focusring,
-  [type="reset"]:-moz-focusring,
-  [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
-  }
-  
-  /**
-   * Correct the padding in Firefox.
-   */
-  
-  fieldset {
-    padding: 0.35em 0.75em 0.625em;
-  }
-  
-  /**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
-   */
-  
-  legend {
-    box-sizing: border-box; /* 1 */
-    color: inherit; /* 2 */
-    display: table; /* 1 */
-    max-width: 100%; /* 1 */
-    padding: 0; /* 3 */
-    white-space: normal; /* 1 */
-  }
-  
-  /**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
-  
-  progress {
-    vertical-align: baseline;
-  }
-  
-  /**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
-  
-  textarea {
-    overflow: auto;
-  }
-  
-  /**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
-  
-  [type="checkbox"],
-  [type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-  }
-  
-  /**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
-  
-  [type="number"]::-webkit-inner-spin-button,
-  [type="number"]::-webkit-outer-spin-button {
-    height: auto;
-  }
-  
-  /**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
-  
-  [type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
-  }
-  
-  /**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
-  
-  [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
-  
-  /**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
-  
-  ::-webkit-file-upload-button {
-    -webkit-appearance: button; /* 1 */
-    font: inherit; /* 2 */
-  }
-  
-  /* Interactive
-     ========================================================================== */
-  
-  /*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
-  
-  details {
-    display: block;
-  }
-  
-  /*
-   * Add the correct display in all browsers.
-   */
-  
-  summary {
-    display: list-item;
-  }
-  
-  /* Misc
-     ========================================================================== */
-  
-  /**
-   * Add the correct display in IE 10+.
-   */
-  
-  template {
-    display: none;
-  }
-  
-  /**
-   * Add the correct display in IE 10.
-   */
-  
-  [hidden] {
-    display: none;
-  }
+ /* HTML 基本樣式重置和一致性設定 */
+
+html {
+  line-height: 1.15; /* 1. 行高 1.15倍 */
+  -webkit-text-size-adjust: 100%; /* 2. 在Webkit引擎瀏覽器中，文本大小調整為100% */
+}
+
+/* 區塊樣式 */
+
+/* 移除所有瀏覽器的邊距 */
+body {
+  margin: 0;
+}
+
+/* 在IE中一致地渲染'main'元素 */
+main {
+  display: block;
+}
+
+/* 在Chrome、Firefox和Safari中，修正'section'和'article'內'h1'元素的字體大小和邊距 */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* 內容分組樣式 */
+
+/* 1. 在Firefox中添加正確的盒子大小 */
+/* 2. 在Edge和IE中顯示溢出 */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* 1. 在所有瀏覽器中修正字體大小的繼承和縮放 */
+/* 2. 在所有瀏覽器中修正奇怪的 'em' 字體大小 */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* 文本層級語義樣式 */
+
+/* 在IE 10中移除活動連結的灰色背景 */
+a {
+  background-color: transparent;
+}
+
+/* 1. 在Chrome 57-中移除底部邊框 */
+/* 2. 在Chrome、Edge、IE、Opera和Safari中添加正確的文本裝飾 */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/* 在Chrome、Edge和Safari中添加正確的字體粗細 */
+b, strong {
+  font-weight: bolder;
+}
+
+/* 1. 在所有瀏覽器中修正字體大小的繼承和縮放 */
+/* 2. 在所有瀏覽器中修正奇怪的 'em' 字體大小 */
+code, kbd, samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* 在所有瀏覽器中添加正確的字體大小 */
+small {
+  font-size: 80%;
+}
+
+/* 防止 'sub' 和 'sup' 元素影響行高度 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* 調整 'sub' 和 'sup' 的位置 */
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* 嵌入內容樣式 */
+
+/* 在IE 10中移除圖像內部連結的邊框 */
+img {
+  border-style: none;
+}
+
+/* 表單樣式 */
+
+/* 1. 在所有瀏覽器中更改字體風格 */
+/* 2. 在Firefox和Safari中移除邊距 */
+button, input, optgroup, select, textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/* 1. 在IE中顯示溢出 */
+/* 1. 在Edge中顯示溢出 */
+button, input {
+  overflow: visible; /* 1 */
+}
+
+/* 在Edge、Firefox和IE中移除文本變換的繼承 */
+/* 1. 在Firefox中移除文本變換的繼承 */
+button, select { /* 1 */
+  text-transform: none;
+}
+
+/* 修正iOS和Safari中無法樣式化可點擊類型的問題 */
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* 在Firefox中移除內部邊框和填充 */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* 恢復前一規則取消的焦點樣式 */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* 修正Firefox中的填充 */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/* 1. 在Edge和IE中修正文字包裹 */
+/* 2. 在IE中修正從 'fieldset' 元素繼承的顏色 */
+/* 3. 移除填充，以避免開發人員在所有瀏覽器中將 'fieldset' 元素零化時被困擾 */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/* 在Chrome、Firefox和Opera中添加正確的垂直對齊方式 */
+progress {
+  vertical-align: baseline;
+}
+
+/* 在IE 10+中移除垂直滾動條 */
+textarea {
+  overflow: auto;
+}
+
+/* 1. 在IE 10中添加正確的盒子大小 */
+/* 2. 在IE 10中移除填充 */
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/* 在Chrome中修正增量和減量按鈕的游標樣式 */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* 1. 在Chrome和Safari中修正奇怪的外觀 */
+/* 2. 在Safari中修正輪廓樣式 */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/* 移除Chrome和Safari中macOS上的內部填充 */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* 1. 在iOS和Safari中添加正確的可點擊類型樣式 */
+/* 2. 在Safari中將字體屬性更改為 'inherit' */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* 互動樣式 */
+
+/* 在Edge、IE 10+和Firefox中添加正確的顯示方式 */
+details {
+  display: block;
+}
+
+/* 在所有瀏覽器中添加正確的顯示方式 */
+summary {
+  display: list-item;
+}
+
+/* 雜項 */
+
+/* 在IE 10中添加正確的顯示方式 */
+template {
+  display: none;
+}
+
+/* 在IE 10中添加正確的顯示方式 */
+[hidden] {
+  display: none;
+}
