@@ -1,0 +1,121 @@
+
+/* 設定整個網頁的字體、行高、邊距和內距 */
+body {
+  font-family: Arial, sans-serif; /* 字體設定為 Arial 或 sans-serif */
+  line-height: 1.6; /* 行高為字體大小的1.6倍 */
+  margin: 0; /* 移除預設邊距 */
+  padding: 10px; /* 在內容周圍添加20px的內距 */
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+/* 響應式容器的樣式設定 */
+.responsive-container {
+  max-width: 100%; /* 容器的最大寬度為100% */
+  display: flex; /* 使用 Flexbox 佈局 */
+  flex-wrap: wrap; /* 在需要時換行 */
+  justify-content: space-between; /* 在容器內的項目之間均勻分配空間 */
+
+  margin-top: 20px; /* 底邊距為20px */
+}
+
+/* 響應式項目的樣式設定 */
+.responsive-item {
+  width: calc(33.33% - 10px); /* 三個項目的寬度為33.33%，並留有10px的間距 */
+  margin-bottom: 20px; /* 底邊距為20px */
+}
+
+/* 圖片的樣式設定 */
+.responsive-img {
+  width: 60%; /* 圖片寬度為100% */
+  height: auto; /* 高度自動根據寬度縮放，保持比例 */
+  margin-top: 20;
+  border-radius: 20px;/* border-radius(設定圓角)*/
+  
+}
+
+/* 文字的響應式樣式設定 */
+.responsive-text {
+  max-width: 100%; /* 文字區塊的最大寬度為100% */
+  word-wrap: break-word; /* 自動換行 */
+}
+
+/* 在螢幕寬度小於等於768px時的樣式調整 */
+@media (max-width: 768px) {
+  .responsive-item {
+    width: 100%; /* 在小螢幕上項目佔據整個寬度 */
+  }
+}
+
+/* 設定 .section-primary 樣式，使其成為一個具有中央對齊效果的區塊，最小高度為整個視窗高度，並設定背景顏色、文字顏色、文本居中對齊 */
+.section-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 最小高度為整個視窗高度 */
+  background-color: #333; /* 背景顏色 */
+  color: white; /* 文字顏色 */
+  text-align: center; /* 文本居中對齊 */
+}
+
+/* 設定 .wrapper-content 樣式，使用 flex 佈局，使內容在水平方向上分散對齊，垂直方向上居中對齊，並設定寬度為80%，水平居中 */
+.wrapper-content {
+  display: flex;
+  justify-content: space-between; /* 在水平方向上分散對齊 */
+  align-items: center; /* 垂直方向上居中對齊 */
+  width: 80%; /* 寬度為80% */
+  margin: 0 auto; /* 水平居中 */
+}
+
+/* 設定 .wrapper-primary-text 樣式，設定最大寬度為50%、左對齊、內邊距20px */
+.wrapper-primary-text {
+  max-width: 50%;
+  text-align: left;
+  padding: 20px;
+}
+
+/* 設定 .primary__title 樣式，字體大小為3em、底邊距20px */
+.primary__title {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* 設定 .primary__text 樣式，字體大小為1.2em、底邊距20px */
+.primary__text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* 設定 .primary__link-button 樣式，內聯區塊，設定內邊距、背景顏色、文字顏色、文字裝飾為無、邊框半徑5px，並設定背景色的過渡效果 */
+.primary__link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* 設定 .primary__link-button 滑鼠懸停樣式，改變背景顏色 */
+.primary__link-button:hover {
+  background-color: #4285f4;
+}
+
+/* 設定 .primary__social 樣式，設定上邊距 */
+.primary__social {
+  margin-top: 20px;
+}
+
+/* 設定 .primary__social img 樣式，設定圖片寬度、右邊距 */
+.primary__social img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* 設定 .primary__main-img 樣式，設定最大寬度為50%，高度自動根據寬度縮放 */
+.primary__main-img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 300px;
+}
